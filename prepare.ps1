@@ -96,7 +96,7 @@ Write-Host "INFO: Config file generated"
 Stop-Process -Name "emulationstation"
 
 # Prepare Retroarch
-$retroArchPath = "$env:userprofile\.emulationstation\systems\retroarch\"
+$retroArchPath = "$env:userprofile\.emulationstation\systems\retroarch"
 $coresPath = "$retroArchPath\cores"
 $retroArchBinary = "$requirementsFolder\RetroArch.7z"
 if(Test-Path $retroArchBinary){
